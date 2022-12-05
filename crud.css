@@ -1,0 +1,49 @@
+*{
+    margin: 0PX;
+    padding: 0PX;
+}
+ 
+    body{
+        background-color: teal;
+        color: white;
+        display: flex;
+    }
+    section{
+        border: 2px solid white;
+        margin-top: 30px;
+        position: relative;
+        left: 60px;
+        padding: 20px;
+    }
+    table{
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    tr td{
+        padding: 10px 20px;
+        text-align: center;
+    }
+    input{
+        padding: 10px 20px;
+        border-radius: 40px;
+        border: none;
+    }
+    input:hover{
+        background-color: rgba(13, 233, 31, 0.888); 
+        transform: scale(1.2);
+    }
+    .add:hover{
+        background-color: rgba(13, 2, 2, 0.888);
+        color: white; 
+    }
+    .add{
+            padding: 10px 40px;
+            margin-left: 200px;
+            border-radius: 40px;
+    }
+    button{
+            padding: 5px 20px;
+    }
+
+
+

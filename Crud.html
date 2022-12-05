@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="crud.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+    
+            <table>
+                <tr>
+                    <td></td>
+                    <td><h1 style="color: red;font-size:30px;">Crud Operation</h1></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="" class="lab">ID  </label>
+                    </td>
+                    <td>
+                        <input type="number" name="" id="ID" placeholder="Enter Id">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="" class="lab">First Name  </label>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="FN" placeholder="Enter First Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="" class="lab">Last Name  </label>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="LN" placeholder="Enter Last Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="" class="lab">Department  </label>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="DEP" placeholder="Enter Department Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="" class="lab">Email  </label>
+                    </td>
+                    <td>
+                        <input type="email" name="EM" id="EM" placeholder="Enter Email Id">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="" class="lab">Country  </label>
+                    </td>
+                    <td>
+                        <input type="text" name="CNT" id="CNT" placeholder="Enter Country">
+                    </td>
+                </tr>
+
+            </table>
+            <button class="add" id="add"> ADD </button>
+        
+    </section>
+    <section>
+        <table>
+            <thead>
+            <tr>
+                <td>
+                 <h1>ID</h1>
+                </td>
+                <td>
+                    <h1>First Name</h1>
+                </td>
+                <td>
+                    <h1>Last Name</h1>
+                </td>
+                <td>
+                    <h1>Department</h1>
+                </td>
+                <td>
+                    <h1>Email</h1>
+                </td>
+                <td>
+                    <h1>Country</h1>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                 <h1 id="id"></h1>
+                </td>
+                <td>
+                    <h1 id="fn"></h1>
+                </td>
+                <td>
+                    <h1 id="ln"></h1>
+                </td>
+                <td>
+                    <h1 id="dep"></h1>
+                </td>
+                <td>
+                    <h1 id="mail"></h1>
+                </td>
+                <td>
+                    <h1 id="count"></h1>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+    </section>
+    <script>
+            $('#add').click(function(){
+                
+                let id = $('#ID').val();
+                $('#id').text(id);
+            
+                let fn = $('#FN').val();
+                $('#fn').text(fn);
+
+                let ln = $('#LN').val();
+                $('#ln').text(ln);
+
+                let dep = $('#DEP').val();
+                $('#dep').text(dep);
+
+                let email = $('#EM').val();
+                $('#mail').text(email);
+
+                let country = $('#CNT').val();
+                $('#count').text(country);
+                
+            })
+
+    </script>
+</body>
+</html>
